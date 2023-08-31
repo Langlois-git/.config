@@ -1,4 +1,1 @@
-# DLinux
-# .config
-# .config
-# .config
+These are my dotfiles, to configure my Arch Linux development enviorment.
