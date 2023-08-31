@@ -1,0 +1,13 @@
+import:
+ - ~/.config/alacritty/themes/themes/monokai_charcoal.yaml
+font:
+  normal:
+    family: "MesloLGS NF"
+
+  size: 6
+
+colors:
+  primary:
+    background: '0x000000'
+
+opacity: 0.5

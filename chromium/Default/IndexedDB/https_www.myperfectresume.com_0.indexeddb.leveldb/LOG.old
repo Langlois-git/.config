@@ -1,0 +1,9 @@
+2023/08/30-21:50:59.276 b5b Reusing MANIFEST /home/david/.config/chromium/Default/IndexedDB/https_www.myperfectresume.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/08/30-21:50:59.277 b5b Recovering log #6
+2023/08/30-21:50:59.278 b5b Reusing old log /home/david/.config/chromium/Default/IndexedDB/https_www.myperfectresume.com_0.indexeddb.leveldb/000006.log 
+2023/08/30-21:50:59.678 b5c Compacting 1@1 + 1@2 files
+2023/08/30-21:50:59.685 b5c Generated table #9@1: 91 keys, 82653 bytes
+2023/08/30-21:50:59.685 b5c Compacted 1@1 + 1@2 files => 82653 bytes
+2023/08/30-21:50:59.687 b5c compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/08/30-21:50:59.687 b5c Delete type=2 #5
+2023/08/30-21:50:59.687 b5c Delete type=2 #7

@@ -1,0 +1,19 @@
+- name: dwm
+  prefix: mod
+  keybinds:
+    - name: focus forward client
+      key: j
+    - name: focus backward client
+      key: k
+    - name: focus previous client
+      key: a
+    - name: focus first client
+      key: u
+    - name: focus second client
+      key: i
+    - name: focus third  client
+      key: o
+    - name: focus last client
+      key: p
+    - name: spawn terminal
+      key: return  

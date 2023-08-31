@@ -1,0 +1,15 @@
+2023/08/30-23:46:16.221 b5b Reusing MANIFEST /home/david/.config/chromium/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/08/30-23:46:16.221 b5b Recovering log #90
+2023/08/30-23:46:16.224 b5b Reusing old log /home/david/.config/chromium/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000090.log 
+2023/08/30-23:46:50.293 b5b Level-0 table #95: started
+2023/08/30-23:46:50.308 b5b Level-0 table #95: 288842 bytes OK
+2023/08/30-23:46:50.313 b5b Delete type=0 #90
+2023/08/30-23:46:50.314 b5b Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2023/08/30-23:46:50.314 b5b Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x0e\x02\x1f\x03\xcd\xdc\xb1\xae{\xa4xB\x00\x03\x00\x00\x00\x00\x00\xc0]@' @ 184283 : 1
+2023/08/30-23:46:50.314 b5b Compacting 1@1 + 1@2 files
+2023/08/30-23:46:50.322 b5b Generated table #96@1: 382 keys, 60644 bytes
+2023/08/30-23:46:50.323 b5b Compacted 1@1 + 1@2 files => 60644 bytes
+2023/08/30-23:46:50.326 b5b compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/08/30-23:46:50.327 b5b Delete type=2 #95
+2023/08/30-23:46:50.327 b5b Delete type=2 #92
+2023/08/30-23:46:50.327 b5b Manual compaction at level-1 from '\x00\x0e\x02\x1f\x03\xcd\xdc\xb1\xae{\xa4xB\x00\x03\x00\x00\x00\x00\x00\xc0]@' @ 184283 : 1 .. (end); will stop at (end)

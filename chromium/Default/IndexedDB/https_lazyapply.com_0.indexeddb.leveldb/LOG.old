@@ -1,0 +1,14 @@
+2023/08/29-17:23:13.854 794 Reusing MANIFEST /home/david/.config/chromium/Default/IndexedDB/https_lazyapply.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/08/29-17:23:13.854 794 Recovering log #40
+2023/08/29-17:23:13.854 794 Reusing old log /home/david/.config/chromium/Default/IndexedDB/https_lazyapply.com_0.indexeddb.leveldb/000040.log 
+2023/08/29-17:23:13.854 794 Delete type=2 #38
+2023/08/29-17:23:13.867 79d Level-0 table #45: started
+2023/08/29-17:23:13.869 79d Level-0 table #45: 596 bytes OK
+2023/08/29-17:23:13.874 79d Delete type=0 #40
+2023/08/29-17:23:13.874 795 Manual compaction at level-0 from '\x00\x0f\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x10\x00\x00\x00' @ 0 : 0; will stop at '\x00\x0f\x00\x00\x05' @ 306 : 1
+2023/08/29-17:23:13.874 795 Compacting 1@0 + 1@1 files
+2023/08/29-17:23:13.877 795 Generated table #46@0: 68 keys, 1451 bytes
+2023/08/29-17:23:13.877 795 Compacted 1@0 + 1@1 files => 1451 bytes
+2023/08/29-17:23:13.880 795 compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/08/29-17:23:13.880 795 Delete type=2 #45
+2023/08/29-17:23:13.881 795 Manual compaction at level-0 from '\x00\x0f\x00\x00\x05' @ 306 : 1 .. '\x00\x10\x00\x00\x00' @ 0 : 0; will stop at (end)

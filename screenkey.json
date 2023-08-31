@@ -1,0 +1,32 @@
+{
+    "no_systray": false,
+    "timeout": 1.0,
+    "recent_thr": 0.1,
+    "compr_cnt": 3,
+    "ignore": [],
+    "position": "fixed",
+    "persist": true,
+    "window": null,
+    "font_desc": "Open Sans Condensed, Light Condensed 10",
+    "font_size": "small",
+    "font_color": "#3333d1d17a7a",
+    "bg_color": "#777776767b7b",
+    "opacity": 0.2,
+    "key_mode": "composed",
+    "bak_mode": "baked",
+    "mods_mode": "normal",
+    "mods_only": false,
+    "multiline": false,
+    "vis_shift": true,
+    "vis_space": true,
+    "geometry": [
+        201,
+        129,
+        376,
+        50
+    ],
+    "screen": 0,
+    "start_disabled": false,
+    "mouse": false,
+    "button_hide_duration": 1
+}

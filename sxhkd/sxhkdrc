@@ -1,0 +1,39 @@
+ogram launcher
+mod4 + r
+	rofi -show drun
+	
+
+#Keybind cheatsheet
+mod4 + shift + slash
+	/home/david/go/bin/keyb -p | rofi -dmenu
+
+#Wifi Menu
+mod4 + w
+	/home/david/.config/rofi-wifi-menu/rofi-wifi-menu.sh
+
+#Bluetooth Menu
+mod4 + b
+	rofi-bluetooth
+
+#File mjnager
+mod4 + e
+	alacritty -e lf
+
+#IDE
+mod4 + n 
+	neovide
+
+#firefox
+mod4 + g
+    firefox
+#Power menu
+control + alt + delete
+	rofi -show menu -modi "menu:/home/david/scripts/rofi-power-menu --choices=shutdown/reboot/suspend/hibernate"
+
+#Screenshot menu
+Print
+	/home/david/.config/rofi/rofi-screenshot
+
+#Lock screen
+control + alt + delete
+	betterlockscreen -l

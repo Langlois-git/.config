@@ -1,0 +1,7 @@
+2023/08/28-23:55:11.719 6e1 Reusing MANIFEST /home/david/.config/chromium/Default/IndexedDB/https_h.online-metrix.net_0.indexeddb.leveldb/MANIFEST-000001
+2023/08/28-23:55:11.719 6e1 Recovering log #3
+2023/08/28-23:55:11.720 6e1 Reusing old log /home/david/.config/chromium/Default/IndexedDB/https_h.online-metrix.net_0.indexeddb.leveldb/000003.log 
+2023/08/28-23:55:15.203 6e1 Level-0 table #5: started
+2023/08/28-23:55:15.206 6e1 Level-0 table #5: 1277 bytes OK
+2023/08/28-23:55:15.209 6e1 Delete type=0 #3
+2023/08/28-23:55:15.209 6e1 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

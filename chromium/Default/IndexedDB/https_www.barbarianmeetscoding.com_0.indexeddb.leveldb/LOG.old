@@ -1,0 +1,6 @@
+2023/08/21-01:56:36.804 313c Creating DB /home/david/.config/chromium/Default/IndexedDB/https_www.barbarianmeetscoding.com_0.indexeddb.leveldb since it was missing.
+2023/08/21-01:56:36.813 313c Reusing MANIFEST /home/david/.config/chromium/Default/IndexedDB/https_www.barbarianmeetscoding.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/08/21-01:57:30.721 313d Level-0 table #5: started
+2023/08/21-01:57:30.727 313d Level-0 table #5: 4118 bytes OK
+2023/08/21-01:57:30.731 313d Delete type=0 #3
+2023/08/21-01:57:30.732 313d Manual compaction at level-0 from (begin) .. (end); will stop at (end)

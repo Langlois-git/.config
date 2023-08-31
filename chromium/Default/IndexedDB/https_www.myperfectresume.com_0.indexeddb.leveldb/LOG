@@ -1,0 +1,6 @@
+2023/08/30-22:17:44.221 b5b Reusing MANIFEST /home/david/.config/chromium/Default/IndexedDB/https_www.myperfectresume.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/08/30-22:17:44.221 b5b Recovering log #6
+2023/08/30-22:17:44.223 b5b Reusing old log /home/david/.config/chromium/Default/IndexedDB/https_www.myperfectresume.com_0.indexeddb.leveldb/000006.log 
+2023/08/30-23:25:29.075 b5c Level-0 table #12: started
+2023/08/30-23:25:29.085 b5c Level-0 table #12: 1532447 bytes OK
+2023/08/30-23:25:29.089 b5c Delete type=0 #6

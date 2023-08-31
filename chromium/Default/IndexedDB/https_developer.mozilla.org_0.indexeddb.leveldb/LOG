@@ -1,0 +1,6 @@
+2023/08/26-03:21:32.829 2304 Creating DB /home/david/.config/chromium/Default/IndexedDB/https_developer.mozilla.org_0.indexeddb.leveldb since it was missing.
+2023/08/26-03:21:32.840 2304 Reusing MANIFEST /home/david/.config/chromium/Default/IndexedDB/https_developer.mozilla.org_0.indexeddb.leveldb/MANIFEST-000001
+2023/08/26-03:21:35.300 2305 Level-0 table #5: started
+2023/08/26-03:21:35.305 2305 Level-0 table #5: 401 bytes OK
+2023/08/26-03:21:35.310 2305 Delete type=0 #3
+2023/08/26-03:21:35.310 2305 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

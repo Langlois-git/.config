@@ -1,0 +1,475 @@
+MODKEY,                       XK_Escape,     setkeymode,             .ui = COMMANDMODE
+MODKEY|ShiftMask,             XK_Return,     spawn,                  .v = termcmd
+MODKEY|ControlMask,           XK_p,          riospawnsync,           .v = dmenucmd
+MODKEY|ControlMask,           XK_Return,     riospawn,               .v = termcmd
+MODKEY,                       XK_s,          rioresize,              0
+MODKEY|ShiftMask,                       XK_b,          togglebar,              0
+MODKEY|ShiftMask,             XK_b,          toggletopbar,           0
+MODKEY|ControlMask,           XK_b,          tabmode,                -1
+MODKEY|ControlMask,           XK_space,      focusmaster,            0
+MODKEY,                       XK_y,          focusstack,             .i = +1
+MODKEY,                       XK_u,          focusstack,             .i = -1
+MODKEY,                       XK_Left,       focusdir,               .i = 0
+MODKEY,                       XK_Right,      focusdir,               .i = 1
+MODKEY,                       XK_Up,         focusdir,               .i = 2
+MODKEY,                       XK_Down,       focusdir,               .i = 3
+MODKEY,                       XK_s,          swapfocus,              .i = -1
+MODKEY,                       XK_v,          switchcol,              0
+MODKEY|Mod4Mask,              XK_j,          rotatestack,            .i = +1
+MODKEY|Mod4Mask,              XK_k,          rotatestack,            .i = -1
+MODKEY|Mod4Mask,              XK_j,          inplacerotate,          .i = +2
+MODKEY|Mod4Mask,              XK_k,          inplacerotate,          .i = -2
+MODKEY|Mod4Mask|ShiftMask,    XK_j,          inplacerotate,          .i = +1
+MODKEY|Mod4Mask|ShiftMask,    XK_k,          inplacerotate,          .i = -1
+MODKEY|ControlMask,           XK_j,          pushdown,               0
+MODKEY|ControlMask,           XK_k,          pushup,                 0
+MODKEY,                       XK_c,          incnmaster,             .i = +1
+MODKEY,                       XK_d,          incnmaster,             .i = -1
+MODKEY|ControlMask,           XK_i,          incnstack,              .i = +1
+MODKEY|ControlMask,           XK_u,          incnstack,              .i = -1
+MODKEY,                       XK_h,          setmfact,               .f = -0.05
+MODKEY,                       XK_l,          setmfact,               .f = +0.05
+MODKEY|ShiftMask,             XK_h,          setcfact,               .f = +0.25
+MODKEY|ShiftMask,             XK_l,          setcfact,               .f = -0.25
+MODKEY|ShiftMask,             XK_o,          setcfact,               0
+MODKEY|ControlMask|ShiftMask, XK_e,          aspectresize,           .i = +24
+MODKEY|ControlMask|ShiftMask, XK_r,          aspectresize,           .i = -24
+MODKEY|Mod4Mask,              XK_Down,       moveresize,             .v = "0x 25y 0w 0h"
+MODKEY|Mod4Mask,              XK_Up,         moveresize,             .v = "0x -25y 0w 0h"
+MODKEY|Mod4Mask,              XK_Right,      moveresize,             .v = "25x 0y 0w 0h"
+MODKEY|Mod4Mask,              XK_Left,       moveresize,             .v = "-25x 0y 0w 0h"
+MODKEY|Mod4Mask|ShiftMask,    XK_Down,       moveresize,             .v = "0x 0y 0w 25h"
+MODKEY|Mod4Mask|ShiftMask,    XK_Up,         moveresize,             .v = "0x 0y 0w -25h"
+MODKEY|Mod4Mask|ShiftMask,    XK_Right,      moveresize,             .v = "0x 0y 25w 0h"
+MODKEY|Mod4Mask|ShiftMask,    XK_Left,       moveresize,             .v = "0x 0y -25w 0h"
+MODKEY|ShiftMask,             XK_j,          movestack,              .i = +1
+MODKEY|ShiftMask,             XK_k,          movestack,              .i = -1
+MODKEY,                       XK_x,          transfer,               0
+MODKEY|ControlMask,           XK_x,          transferall,            0
+MODKEY|ControlMask,           XK_r,          reorganizetags,         0
+MODKEY|ControlMask,           XK_d,          distributetags,         0
+MODKEY|ShiftMask|ControlMask, XK_a,          updateinset,            .v = &default_inset
+MODKEY,                       XK_Return,     zoom,                   0
+MODKEY|Mod4Mask,              XK_u,          incrgaps,               .i = +1
+MODKEY|Mod4Mask|ShiftMask,    XK_u,          incrgaps,               .i = -1
+MODKEY|Mod4Mask,              XK_i,          incrigaps,              .i = +1
+MODKEY|Mod4Mask|ShiftMask,    XK_i,          incrigaps,              .i = -1
+MODKEY|Mod4Mask,              XK_o,          incrogaps,              .i = +1
+MODKEY|Mod4Mask|ShiftMask,    XK_o,          incrogaps,              .i = -1
+MODKEY|Mod4Mask,              XK_6,          incrihgaps,             .i = +1
+MODKEY|Mod4Mask|ShiftMask,    XK_6,          incrihgaps,             .i = -1
+MODKEY|Mod4Mask,              XK_7,          incrivgaps,             .i = +1
+MODKEY|Mod4Mask|ShiftMask,    XK_7,          incrivgaps,             .i = -1
+MODKEY|Mod4Mask,              XK_8,          incrohgaps,             .i = +1
+MODKEY|Mod4Mask|ShiftMask,    XK_8,          incrohgaps,             .i = -1
+MODKEY|Mod4Mask,              XK_9,          incrovgaps,             .i = +1
+MODKEY|Mod4Mask|ShiftMask,    XK_9,          incrovgaps,             .i = -1
+MODKEY|Mod4Mask,              XK_0,          togglegaps,             0
+MODKEY|Mod4Mask|ShiftMask,    XK_0,          defaultgaps,            0
+Mod1Mask,                     XK_Tab,        alttabstart,            0
+MODKEY,                       XK_Tab,        view,                   0
+MODKEY|ShiftMask,             XK_Left,       shifttag,                .i = -1
+MODKEY|ShiftMask,             XK_Right,      shifttag,                .i = +1
+MODKEY|ShiftMask|ControlMask, XK_Left,       shifttagclients,         .i = -1
+MODKEY|ShiftMask|ControlMask, XK_Right,      shifttagclients,         .i = +1
+MODKEY|ShiftMask,             XK_Tab,        shiftview,               .i = -1
+MODKEY|ShiftMask,             XK_backslash,  shiftview,               .i = +1
+MODKEY|Mod4Mask,              XK_Tab,        shiftviewclients,        .i = -1
+MODKEY|Mod4Mask,              XK_backslash,  shiftviewclients,        .i = +1
+MODKEY|ControlMask,           XK_Left,       shiftboth,               .i = -1
+MODKEY|ControlMask,           XK_Right,      shiftboth,               .i = +1
+MODKEY|Mod4Mask|ShiftMask,    XK_Left,       shiftswaptags,           .i = -1
+MODKEY|Mod4Mask|ShiftMask,    XK_Right,      shiftswaptags,           .i = +1
+MODKEY|ControlMask,           XK_z,          showhideclient,         0
+MODKEY|ShiftMask,             XK_c,          killclient,             0
+MODKEY|ShiftMask,             XK_x,          killunsel,              0
+MODKEY|ShiftMask,             XK_r,          self_restart,           0
+MODKEY|ShiftMask,             XK_q,          quit,                   0
+MODKEY|ControlMask|ShiftMask, XK_q,          quit,                   1
+MODKEY,                       XK_u,          focusurgent,            0
+0,                            HOLDKEY,       holdbar,                0
+MODKEY,                       XK_o,          winview,                0
+MODKEY|ShiftMask,             XK_F5,         xrdb,                   .v = NULL
+MODKEY,                       XK_t,          setlayout,              .v = &layouts[0]
+MODKEY,                       XK_f,          setlayout,              .v = &layouts[1]
+MODKEY,                       XK_m,          setlayout,              .v = &layouts[2]
+MODKEY,                       XK_y,          setlayout,              .v = &layouts[3]
+MODKEY,                       XK_r,          setlayout,              .v = &layouts[4]
+MODKEY,                       XK_c,          setlayout,              .v = &layouts[3]
+MODKEY|ControlMask,           XK_t,          rotatelayoutaxis,       .i = +1
+MODKEY|ControlMask,           XK_Tab,        rotatelayoutaxis,       .i = +2
+MODKEY|ControlMask|ShiftMask, XK_Tab,        rotatelayoutaxis,       .i = +3
+MODKEY|ControlMask|Mod1Mask,  XK_Tab,        rotatelayoutaxis,       .i = +4
+MODKEY|Mod5Mask,              XK_t,          rotatelayoutaxis,       .i = -1
+MODKEY|Mod5Mask,              XK_Tab,        rotatelayoutaxis,       .i = -2
+MODKEY|Mod5Mask|ShiftMask,    XK_Tab,        rotatelayoutaxis,       .i = -3
+MODKEY|Mod5Mask|Mod1Mask,     XK_Tab,        rotatelayoutaxis,       .i = -4
+MODKEY|ControlMask,           XK_Return,     mirrorlayout,           0
+MODKEY,                       XK_space,      setlayout,              0
+MODKEY|ShiftMask,             XK_space,      togglefloating,         0
+MODKEY|ControlMask|ShiftMask, XK_h,          togglehorizontalmax,    0
+MODKEY|ControlMask|ShiftMask, XK_l,          togglehorizontalmax,    0
+MODKEY|ControlMask|ShiftMask, XK_j,          toggleverticalmax,      0
+MODKEY|ControlMask|ShiftMask, XK_k,          toggleverticalmax,      0
+MODKEY|ControlMask,           XK_m,          togglemax,              0
+MODKEY|ShiftMask,             XK_Escape,     togglenomodbuttons,     0
+MODKEY,                       XK_grave,      togglescratch,          .v = scratchpadcmd
+MODKEY|ControlMask,           XK_grave,      setscratch,             .v = scratchpadcmd
+MODKEY|ShiftMask,             XK_grave,      removescratch,          .v = scratchpadcmd
+MODKEY,                       XK_grave,      togglescratch,          .ui = 0
+MODKEY|ControlMask,           XK_grave,      setscratch,             .ui = 0
+MODKEY|ShiftMask,             XK_grave,      removescratch,          .ui = 0
+MODKEY|Mod4Mask,              XK_space,      unfloatvisible,         0
+MODKEY|ShiftMask,             XK_t,          unfloatvisible,         .v = &layouts[0]
+MODKEY,                       XK_y,          togglefullscreen,       0
+MODKEY|ShiftMask,             XK_y,          togglefakefullscreen,   0
+MODKEY|ShiftMask,             XK_f,          fullscreen,             0
+MODKEY|ShiftMask,             XK_s,          togglesticky,           0
+MODKEY,                       XK_minus,      scratchpad_show,        0
+MODKEY|ShiftMask,             XK_minus,      scratchpad_hide,        0
+MODKEY,                       XK_equal,      scratchpad_remove,      0
+MODKEY,                       XK_0,          view,                   .ui = ~SPTAGMASK
+MODKEY|ShiftMask,             XK_0,          tag,                    .ui = ~SPTAGMASK
+MODKEY,                       XK_0,          view,                   .ui = ~0
+MODKEY|ShiftMask,             XK_0,          tag,                    .ui = ~0
+MODKEY,                       XK_comma,      focusmon,               .i = -1
+MODKEY,                       XK_period,     focusmon,               .i = +1
+MODKEY|ShiftMask,             XK_comma,      tagmon,                 .i = -1
+MODKEY|ShiftMask,             XK_period,     tagmon,                 .i = +1
+MODKEY,                       XK_Left,       viewtoleft,             0
+MODKEY,                       XK_Right,      viewtoright,            0
+MODKEY|ShiftMask,             XK_Left,       tagtoleft,              0
+MODKEY|ShiftMask,             XK_Right,      tagtoright,             0
+MODKEY|ControlMask,           XK_Left,       tagandviewtoleft,       0
+MODKEY|ControlMask,           XK_Right,      tagandviewtoright,      0
+MODKEY|ShiftMask,             XK_F1,         tagall,                 .v = "F1"
+MODKEY|ShiftMask,             XK_F2,         tagall,                 .v = "F2"
+MODKEY|ShiftMask,             XK_F3,         tagall,                 .v = "F3"
+MODKEY|ShiftMask,             XK_F4,         tagall,                 .v = "F4"
+MODKEY|ShiftMask,             XK_F5,         tagall,                 .v = "F5"
+MODKEY|ShiftMask,             XK_F6,         tagall,                 .v = "F6"
+MODKEY|ShiftMask,             XK_F7,         tagall,                 .v = "F7"
+MODKEY|ShiftMask,             XK_F8,         tagall,                 .v = "F8"
+MODKEY|ShiftMask,             XK_F9,         tagall,                 .v = "F9"
+MODKEY|ControlMask,           XK_F1,         tagall,                 .v = "1"
+MODKEY|ControlMask,           XK_F2,         tagall,                 .v = "2"
+MODKEY|ControlMask,           XK_F3,         tagall,                 .v = "3"
+MODKEY|ControlMask,           XK_F4,         tagall,                 .v = "4"
+MODKEY|ControlMask,           XK_F5,         tagall,                 .v = "5"
+MODKEY|ControlMask,           XK_F6,         tagall,                 .v = "6"
+MODKEY|ControlMask,           XK_F7,         tagall,                 .v = "7"
+MODKEY|ControlMask,           XK_F8,         tagall,                 .v = "8"
+MODKEY|ControlMask,           XK_F9,         tagall,                 .v = "9"
+MODKEY|Mod4Mask|ShiftMask,    XK_comma,      tagallmon,              .i = +1
+MODKEY|Mod4Mask|ShiftMask,    XK_period,     tagallmon,              .i = -1
+MODKEY|Mod4Mask|ControlMask,  XK_comma,      tagswapmon,             .i = +1
+MODKEY|Mod4Mask|ControlMask,  XK_period,     tagswapmon,             .i = -1
+MODKEY,                       XK_n,          togglealttag,           0
+MODKEY|ShiftMask,             XK_n,          nametag,                0
+MODKEY|ControlMask,           XK_Up,         switchtag,               .ui = SWITCHTAG_UP    | SWITCHTAG_VIEW
+MODKEY|ControlMask,           XK_Down,       switchtag,               .ui = SWITCHTAG_DOWN  | SWITCHTAG_VIEW
+MODKEY|ControlMask,           XK_Right,      switchtag,               .ui = SWITCHTAG_RIGHT | SWITCHTAG_VIEW
+MODKEY|ControlMask,           XK_Left,       switchtag,               .ui = SWITCHTAG_LEFT  | SWITCHTAG_VIEW
+MODKEY|Mod4Mask,              XK_Up,         switchtag,               .ui = SWITCHTAG_UP    | SWITCHTAG_TAG | SWITCHTAG_VIEW
+MODKEY|Mod4Mask,              XK_Down,       switchtag,               .ui = SWITCHTAG_DOWN  | SWITCHTAG_TAG | SWITCHTAG_VIEW
+MODKEY|Mod4Mask,              XK_Right,      switchtag,               .ui = SWITCHTAG_RIGHT | SWITCHTAG_TAG | SWITCHTAG_VIEW
+MODKEY|Mod4Mask,              XK_Left,       switchtag,               .ui = SWITCHTAG_LEFT  | SWITCHTAG_TAG | SWITCHTAG_VIEW
+MODKEY,                       XK_KP_7,       moveplace,              .ui = WIN_NW
+MODKEY,                       XK_KP_8,       moveplace,              .ui = WIN_N
+MODKEY,                       XK_KP_9,       moveplace,              .ui = WIN_NE
+MODKEY,                       XK_KP_4,       moveplace,              .ui = WIN_W
+MODKEY,                       XK_KP_5,       moveplace,              .ui = WIN_C
+MODKEY,                       XK_KP_6,       moveplace,              .ui = WIN_E
+MODKEY,                       XK_KP_1,       moveplace,              .ui = WIN_SW
+MODKEY,                       XK_KP_2,       moveplace,              .ui = WIN_S
+MODKEY,                       XK_KP_3,       moveplace,              .ui = WIN_SE
+MODKEY,                       XK_KP_7,       explace,                .ui = EX_NW
+MODKEY,                       XK_KP_8,       explace,                .ui = EX_N
+MODKEY,                       XK_KP_9,       explace,                .ui = EX_NE
+MODKEY,                       XK_KP_4,       explace,                .ui = EX_W
+MODKEY,                       XK_KP_5,       explace,                .ui = EX_C
+MODKEY,                       XK_KP_6,       explace,                .ui = EX_E
+MODKEY,                       XK_KP_1,       explace,                .ui = EX_SW
+MODKEY,                       XK_KP_2,       explace,                .ui = EX_S
+MODKEY,                       XK_KP_3,       explace,                .ui = EX_SE
+MODKEY|ShiftMask,             XK_KP_8,       exresize,               .v = (int [])   0,  25
+MODKEY|ShiftMask,             XK_KP_2,       exresize,               .v = (int [])   0, -25
+MODKEY|ShiftMask,             XK_KP_6,       exresize,               .v = (int [])  25,   0
+MODKEY|ShiftMask,             XK_KP_4,       exresize,               .v = (int []) -25,   0
+MODKEY|ShiftMask,             XK_KP_5,       exresize,               .v = (int [])  25,  25
+MODKEY|ShiftMask|ControlMask, XK_KP_5,       exresize,               .v = (int []) -25, -25
+MODKEY|ControlMask,           XK_KP_6,       togglehorizontalexpand, .i = +1
+MODKEY|ControlMask,           XK_KP_3,       togglehorizontalexpand, .i =  0
+MODKEY|ControlMask,           XK_KP_4,       togglehorizontalexpand, .i = -1
+MODKEY|ControlMask,           XK_KP_8,       toggleverticalexpand,   .i = +1
+MODKEY|ControlMask,           XK_KP_1,       toggleverticalexpand,   .i =  0
+MODKEY|ControlMask,           XK_KP_2,       toggleverticalexpand,   .i = -1
+MODKEY|ControlMask,           XK_KP_9,       togglemaximize,         .i = -1
+MODKEY|ControlMask,           XK_KP_7,       togglemaximize,         .i = +1
+MODKEY|ControlMask,           XK_KP_5,       togglemaximize,         .i =  0
+MODKEY,                     XK_u,            floatpos,               .v = "-26x -26y"
+MODKEY,                     XK_i,            floatpos,               .v = "  0x -26y"
+MODKEY,                     XK_o,            floatpos,               .v = " 26x -26y"
+MODKEY,                     XK_j,            floatpos,               .v = "-26x   0y"
+MODKEY,                     XK_l,            floatpos,               .v = " 26x   0y"
+MODKEY,                     XK_m,            floatpos,               .v = "-26x  26y"
+MODKEY,                     XK_comma,        floatpos,               .v = "  0x  26y"
+MODKEY,                     XK_period,       floatpos,               .v = " 26x  26y"
+Mod3Mask|ControlMask,         XK_u,            floatpos,               .v = "-26a -26a"
+Mod3Mask|ControlMask,         XK_i,            floatpos,               .v = "  0a -26a"
+Mod3Mask|ControlMask,         XK_o,            floatpos,               .v = " 26a -26a"
+Mod3Mask|ControlMask,         XK_j,            floatpos,               .v = "-26a   0a"
+Mod3Mask|ControlMask,         XK_l,            floatpos,               .v = " 26a   0a"
+Mod3Mask|ControlMask,         XK_m,            floatpos,               .v = "-26a  26a"
+Mod3Mask|ControlMask,         XK_comma,        floatpos,               .v = "  0a  26a"
+Mod3Mask|ControlMask,         XK_period,       floatpos,               .v = " 26a  26a"
+MODKEY|ShiftMask,           XK_u,            floatpos,               .v = "-26w -26h"
+MODKEY|ShiftMask,           XK_i,            floatpos,               .v = "  0w -26h"
+MODKEY|ShiftMask,           XK_o,            floatpos,               .v = " 26w -26h"
+MODKEY|ShiftMask,           XK_j,            floatpos,               .v = "-26w   0h"
+MODKEY|ShiftMask,           XK_k,            floatpos,               .v = "800W 800H"
+MODKEY|ShiftMask,           XK_l,            floatpos,               .v = " 26w   0h"
+MODKEY|ShiftMask,           XK_m,            floatpos,               .v = "-26w  26h"
+MODKEY|ShiftMask,           XK_comma,        floatpos,               .v = "  0w  26h"
+MODKEY|ShiftMask,           XK_period,       floatpos,               .v = " 26w  26h"
+MODKEY|ControlMask,            XK_u,            floatpos,               .v = "-1p -1p"
+MODKEY|ControlMask,            XK_i,            floatpos,               .v = " 0p -1p"
+MODKEY|ControlMask,            XK_o,            floatpos,               .v = " 1p -1p"
+MODKEY|ControlMask,            XK_j,            floatpos,               .v = "-1p  0p"
+MODKEY|ControlMask,            XK_k,            floatpos,               .v = " 0p  0p"
+MODKEY|ControlMask,            XK_l,            floatpos,               .v = " 1p  0p"
+MODKEY|ControlMask,            XK_m,            floatpos,               .v = "-1p  1p"
+MODKEY|ControlMask,            XK_comma,        floatpos,               .v = " 0p  1p"
+MODKEY|ControlMask,            XK_period,       floatpos,               .v = " 1p  1p"
+MODKEY|ControlMask,           XK_minus,      setborderpx,            .i = -1
+MODKEY|ControlMask,           XK_plus,       setborderpx,            .i = +1
+MODKEY|ControlMask,           XK_numbersign, setborderpx,            .i = 0
+MODKEY|ControlMask,           XK_comma,      cyclelayout,            .i = -1
+MODKEY|ControlMask,           XK_period,     cyclelayout,            .i = +1
+MODKEY,                       XK_F1,         mpdchange,              .i = -1
+MODKEY,                       XK_F2,         mpdchange,              .i = +1
+MODKEY,                       XK_Escape,     mpdcontrol,             0
+0,                           XK_Escape,               clearcmd,        0
+ControlMask,                 XK_c,                    clearcmd,        0
+0,                           XK_i,                    setkeymode,      .ui = INSERTMODE
+ControlMask, ShiftMask,  0,         0,    XK_w,      XK_h,     0,         0,            setlayout,       .v = &layouts[0]
+ControlMask, 0,          0,         0,    XK_w,      XK_o,     0,         0,            setlayout,       .v = &layouts[2]
+ControlMask, ShiftMask,  0,         0,    XK_w,      XK_o,     0,         0,            onlyclient,      0
+ControlMask, 0,          0,         0,    XK_w,      XK_v,     0,         0,            setlayout,       .v = &layouts[0]
+ControlMask, 0,          0,         0,    XK_w,      XK_less,  0,         0,            setmfact,        .f = -0.05
+ControlMask, ShiftMask,  0,         0,    XK_w,      XK_less,  0,         0,            setmfact,        .f = +0.05
+ControlMask, ShiftMask,  0,         0,    XK_w,      XK_0,     0,         0,            setmfact,        .f = +1.50
+ShiftMask,   0,          0,         0,    XK_period, XK_e,     0,         0,            spawn,           .v = dmenucmd
+ShiftMask,   0,          0,         0,    XK_period, XK_o,     0,         0,            spawn,           .v = dmenucmd
+ShiftMask,   0,          0,         0,    XK_period, XK_q,     XK_Return, 0,            quit,            0
+ShiftMask,   0,          0,         0,    XK_period, XK_b,     XK_d,      XK_Return,    killclient,      0
+ShiftMask,   0,          0,         0,    XK_period, XK_b,     XK_n,      XK_Return,    focusstack,      .i = +1
+ShiftMask,   0,          ShiftMask, 0,    XK_period, XK_b,     XK_n,      XK_Return,    focusstack,      .i = -1
+ClkButton,            0,                   Button1,        spawn,          .v = dmenucmd
+ClkLtSymbol,          0,                   Button1,        setlayout,      0
+ClkLtSymbol,          0,                   Button3,        layoutmenu,     0
+ClkLtSymbol,          0,                   Button3,        setlayout,      .v = &layouts[2]
+ClkWinTitle,          0,                   Button1,        togglewin,      0
+ClkWinTitle,          0,                   Button3,        showhideclient, 0
+ClkWinTitle,          0,                   Button2,        zoom,           0
+ClkStatusText,        0,                   Button1,        sigstatusbar,   .i = 1
+ClkStatusText,        0,                   Button2,        sigstatusbar,   .i = 2
+ClkStatusText,        0,                   Button3,        sigstatusbar,   .i = 3
+ClkStatusText,        0,                   Button1,        spawn,          .v = statuscmd
+ClkStatusText,        0,                   Button2,        spawn,          .v = statuscmd
+ClkStatusText,        0,                   Button3,        spawn,          .v = statuscmd
+ClkStatusText,        0,                   Button2,        spawn,          .v = termcmd
+ClkClientWin,         MODKEY,              Button1,        moveorplace,    .i = 1
+ClkClientWin,         MODKEY,              Button1,        movemouse,      0
+ClkClientWin,         MODKEY,              Button2,        togglefloating, 0
+ClkClientWin,         MODKEY,              Button3,        resizemouse,    0
+ClkClientWin,         MODKEY,              Button4,        resizemousescroll, .v = &scrollargs[0]
+ClkClientWin,         MODKEY,              Button5,        resizemousescroll, .v = &scrollargs[1]
+ClkClientWin,         MODKEY,              Button6,        resizemousescroll, .v = &scrollargs[2]
+ClkClientWin,         MODKEY,              Button7,        resizemousescroll, .v = &scrollargs[3]
+ClkClientWin,         MODKEY|ShiftMask,    Button3,        dragcfact,      0
+ClkClientWin,         MODKEY|ShiftMask,    Button1,        dragmfact,      0
+ClkTagBar,            0,                   Button1,        view,           0
+ClkTagBar,            0,                   Button3,        toggleview,     0
+ClkTagBar,            MODKEY,              Button1,        tag,            0
+ClkTagBar,            MODKEY,              Button3,        toggletag,      0
+ClkTabBar,            0,                   Button1,        focuswin,       0
+"focusstack",              focusstack
+"setmfact",                setmfact
+"togglebar",               togglebar
+"toggletopbar",            toggletopbar
+"incnmaster",              incnmaster
+"togglefloating",          togglefloating
+"focusmon",                focusmon
+"pushstack",               pushstack
+"floatpos",                floatpos
+"focusurgent",             focusurgent
+"viewtoleft",              viewtoleft
+"viewtoright",             viewtoright
+"tagtoleft",               tagtoleft
+"tagtoright",              tagtoright
+"tagandviewtoleft",        tagandviewtoleft
+"tagandviewtoright",       tagandviewtoright
+"swapfocus",               swapfocus
+"switchcol",               switchcol
+"rotatestack",             rotatestack
+"inplacerotate",           inplacerotate
+"pushdown",                pushdown
+"pushup",                  pushup
+"incnstack",               incnstack
+"rotatelayoutaxis",        rotatelayoutaxis
+"setlayoutaxisex",         setlayoutaxisex
+"mirrorlayout",            mirrorlayout
+"setcfact",                setcfact
+"moveplace",               moveplace
+"nametag",                 nametag
+"explace",                 explace
+"togglehorizontalexpand",  togglehorizontalexpand
+"toggleverticalexpand",    toggleverticalexpand
+"togglemaximize",          togglemaximize
+"setkeymode",              setkeymode
+"transfer",                transfer
+"transferall",             transferall
+"tagmon",                  tagmon
+"zoom",                    zoom
+"incrgaps",                incrgaps
+"incrigaps",               incrigaps
+"incrogaps",               incrogaps
+"incrihgaps",              incrihgaps
+"incrivgaps",              incrivgaps
+"incrohgaps",              incrohgaps
+"incrovgaps",              incrovgaps
+"togglegaps",              togglegaps
+"defaultgaps",             defaultgaps
+"setgaps",                 setgapsex
+"view",                    view
+"viewall",                 viewallex
+"viewex",                  viewex
+"toggleview",              toggleview
+"showhideclient",          showhideclient
+"shiftboth",               shiftboth
+"shifttag",                shifttag
+"shifttagclients",         shifttagclients
+"shiftview",               shiftview
+"shiftviewclients",        shiftviewclients
+"shiftswaptags",           shiftswaptags
+"self_restart",            self_restart
+"switchtag",               switchtag
+"togglesticky",            togglesticky
+"setborderpx",             setborderpx
+"cyclelayout",             cyclelayout
+"mpdchange",               mpdchange
+"mpdcontrol",              mpdcontrol
+"toggleviewex",            toggleviewex
+"tag",                     tag
+"tagall",                  tagallex
+"tagex",                   tagex
+"toggletag",               toggletag
+"toggletagex",             toggletagex
+"tagallmon",               tagallmon
+"tagswapmon",              tagswapmon
+"togglealttag",            togglealttag
+"togglefullscreen",        togglefullscreen
+"togglefakefullscreen",    togglefakefullscreen
+"fullscreen",              fullscreen
+"togglehorizontalmax",     togglehorizontalmax
+"toggleverticalmax",       toggleverticalmax
+"togglemax",               togglemax
+"togglescratch",           togglescratch
+"unfloatvisible",          unfloatvisible
+"killclient",              killclient
+"winview",                 winview
+"xrdb",                    xrdb
+"tagnextmonex",            tagnextmonex
+"tagprevmonex",            tagprevmonex
+"quit",                    quit
+"setlayout",               setlayout
+"setlayoutex",             setlayoutex
+1,            setlayout,      .v = 0
+ARG_TYPE_SINT
+ARG_TYPE_SINT
+ARG_TYPE_SINT
+ARG_TYPE_SINT
+ARG_TYPE_NONE
+ARG_TYPE_PTR
+ARG_TYPE_FLOAT
+ARG_TYPE_STR
+ARG_TYPE_UINT
+ARG_TYPE_UINT
+ARG_TYPE_NONE
+ARG_TYPE_NONE
+ARG_TYPE_NONE
+ARG_TYPE_UINT
+ARG_TYPE_UINT
+ARG_TYPE_UINT
+ARG_TYPE_NONE
+ARG_TYPE_NONE
+ARG_TYPE_UINT
+ARG_TYPE_FLOAT
+ARG_TYPE_SINT
+ARG_TYPE_UINT
+ARG_TYPE_SINT
+ARG_TYPE_SINT
+ARG_TYPE_SINT
+ARG_TYPE_NONE
+ARG_TYPE_STR
+ARG_TYPE_NONE
+ARG_TYPE_SINT
+ARG_TYPE_SINT
+ARG_TYPE_SINT
+ARG_TYPE_NONE
+ARG_TYPE_NONE
+ARG_TYPE_NONE
+ARG_TYPE_NONE
+ARG_TYPE_NONE
+ARG_TYPE_NONE
+ARG_TYPE_NONE
+ARG_TYPE_NONE
+ARG_TYPE_SINT
+ARG_TYPE_UINT
+ARG_TYPE_NONE
+ARG_TYPE_NONE
+ARG_TYPE_NONE
+ARG_TYPE_SINT
+ARG_TYPE_NONE
+ARG_TYPE_UINT
+ARG_TYPE_STR
+ARG_TYPE_NONE
+ARG_TYPE_NONE
+ARG_TYPE_NONE
+ARG_TYPE_NONE
+ARG_TYPE_SINT
+ARG_TYPE_UINT
+ARG_TYPE_NONE
+ARG_TYPE_SINT
+ARG_TYPE_NONE
+ARG_TYPE_SINT
+ARG_TYPE_SINT
+ARG_TYPE_SINT
+ARG_TYPE_SINT
+ARG_TYPE_SINT
+ARG_TYPE_SINT
+ARG_TYPE_SINT
+ARG_TYPE_NONE
+ARG_TYPE_SINT
+ARG_TYPE_NONE
+ARG_TYPE_SINT
+ARG_TYPE_UINT
+ARG_TYPE_UINT
+ARG_TYPE_SINT
+ARG_TYPE_NONE
+ARG_TYPE_NONE
+ARG_TYPE_NONE
+ARG_TYPE_NONE
+ARG_TYPE_SINT
+ARG_TYPE_SINT
+ARG_TYPE_SINT
+ARG_TYPE_SINT
+ARG_TYPE_SINT
+ARG_TYPE_SINT
+ARG_TYPE_SINT
+ARG_TYPE_NONE
+ARG_TYPE_NONE
+ARG_TYPE_SINT
+ARG_TYPE_NONE
+ARG_TYPE_NONE
